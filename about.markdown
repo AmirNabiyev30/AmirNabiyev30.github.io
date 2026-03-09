@@ -4,15 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I am a Computer Science student at The City College of New York (CCNY) with an interest in machine learning, algorithms, and AI. My recent portfolio includes engineering a full-stack RAG-based AI chatbot using React, TypeScript, and FastAPI , as well as recreating Andrej Karpathy’s nanoGPT from scratch using PyTorch to understand transformer architectures. Even though I currently am not pursing a masters or above I still have a strong interest in the theoritcal background behind major ideas that drive the world's AI models today. This is purely more of a hobby for me but understanding from the ground up might allow me to better enigneer so please join me for the journey.
