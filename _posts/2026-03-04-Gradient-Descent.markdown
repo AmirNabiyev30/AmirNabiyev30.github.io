@@ -2,7 +2,7 @@
 layout: post
 title: "Gradient Descent Optimization with Momentum"
 categories: "Machine_Learning"
-permalink: /gradien-descent/
+permalink: /gradient-descent/
 ---
 
 *Note: My knowledge comes heavily from the Deep Learning Book by Ian Goodfellow and Professors Gilbert Strang's lectures on youtube and finally I also assume that you understand basic calculus and some linear algebra*
