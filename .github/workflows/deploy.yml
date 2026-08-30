@@ -72,6 +72,8 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Install Ruby dependencies 💎
+        run: bundle install --jobs 4 --retry 3
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
@@ -93,10 +95,14 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          python -m pip install --upgrade jupyter nbconvert
+          bundle exec ruby -e 'abort "al_folio_core is not installed" unless Gem.loaded_specs["al_folio_core"]'
           export JEKYLL_ENV=production
           bundle exec jekyll build
+          touch _site/.nojekyll
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

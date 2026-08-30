@@ -84,7 +84,7 @@ jobs:
           # the whole build. Both would otherwise surface as a broken-looking
           # theme in the screenshots rather than as an obvious CI failure.
           sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
+          python -m pip install --upgrade jupyter nbconvert
 
           # jekyll-imagemagick's generator calls a non-recursive Dir.mkdir on the
           # destination, so a two-level path fails with ENOENT unless the parent
