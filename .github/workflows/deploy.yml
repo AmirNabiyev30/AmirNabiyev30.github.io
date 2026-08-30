@@ -66,6 +66,9 @@ jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -115,5 +118,6 @@ jobs:
           folder: _site
 
       - name: Deploy to GitHub Pages 🚀
+        id: deployment
         if: github.event_name != 'pull_request'
         uses: actions/deploy-pages@v4
