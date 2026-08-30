@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://amirnabiyev30.github.io/al-folio/sitemap.xml
+Sitemap: https://amirnabiyev30.github.io/sitemap.xml
