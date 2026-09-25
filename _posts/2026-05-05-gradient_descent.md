@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Gradient Descent Optimization with Momentum"
+date: 2026-05-05
+tags: math
 categories: "Machine_Learning"
-permalink: /gradient-descent/
 ---
 
 *Note: My knowledge comes heavily from the Deep Learning Book by Ian Goodfellow and Professors Gilbert Strang's lectures on youtube and finally I also assume that you understand basic calculus and some linear algebra*
+
 
 For this blog post which also happens to be my first one, I wanted to talk about some of the fun math I've been doing with the CUNY Direct Reading Program or DRP for short
 
@@ -37,8 +39,10 @@ Gradient descent iterates parameters by a step size of $-\epsilon\mathbf{g}$ as 
 So lets replace our x with iterative x that accounts for learning rate
 
 $$
-x = x_0 - \epsilon\mathbf{g}
-\\f(x_0 - \epsilon\mathbf{g}) \approx f(x_0) -\epsilon\mathbf{g}^\top \mathbf{g} + \frac{1}{2}\mathbf{g}^\top \mathbf{H}\mathbf{g}
+\begin{aligned}
+x &= x_0 - \epsilon\mathbf{g} \\
+f(x_0 - \epsilon\mathbf{g}) &\approx f(x_0) - \epsilon\mathbf{g}^\top \mathbf{g} + \frac{1}{2}\mathbf{g}^\top \mathbf{H}\mathbf{g}
+\end{aligned}
 $$
 
 *Note: Even though I'm using $f(x)$ which i previously mentioned is the model in this case I want to use f(x) for the loss function, just makes my life a little easier in typing*
