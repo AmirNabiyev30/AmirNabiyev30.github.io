@@ -218,9 +218,10 @@ That's it! al-folio automatically marks up:
 
 ```yaml
 google_site_verification: YOUR_VERIFICATION_CODE
+enable_google_verification: true
 ```
 
-(Replace `YOUR_VERIFICATION_CODE` with the code from Search Console.)
+(Replace `YOUR_VERIFICATION_CODE` with the code from Search Console. Rebuild and deploy the site so the verification meta tag is included in the generated HTML.)
 
 **Monitor in Search Console:**
 
