@@ -3,7 +3,7 @@ layout: post
 title: "Summary of Goal Misgeneralization"
 date: 2026-11-07
 tags: math
-categories: "Ai Alignment"
+categories: "AI-Alignment"
 ---
 
 <span style="opacity: 0.5;">Disclaimer: This is my summary of the paper and I don't include everything. If you want to read the paper I have linked it below
