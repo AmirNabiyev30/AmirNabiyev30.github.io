@@ -18,20 +18,20 @@ The paper examines a failure mode where the agent pursues a goal other than in t
 
 Given a RL agent that wants to maximize reward where the reward $R: S \times A \times S \rightarrow \mathbb{R}$ where $R$ takes state, action, and a successor state as input and outputs a real number. If we assume that this agent is deployed OOD, they say goal misgeneralization happens if the agent achieves a low reward because it continues to act capably but optimizes a different objective $R$' $\neq R$ where $R$' is the behavioral objective and $R$ is the intended objective.
 
-Now the paper distinguishes between different types of policies that will become helpful for analyzing agent behavior later on. Goal-directed policies are called agents while unoptimized policies are called devices. They let $\eta(R)$ and $\eta(d)$ be probability distributions otherwise called priors over the space of reward functions and the space of devices respectively. These priors can simply be considered as the agent tendencies to learn this reward function or follow these set of steps. Then they let $p_{agt}(\tau | R)$ and $p_{dev}(\tau | d)$ be the likelihood functions for a trajectory based on a given reward function or a given device. Using this they define 2 distributions over possible trajectories
+Now the paper distinguishes between different types of policies that will become helpful for analyzing agent behavior later on. Goal-directed policies are called agents while unoptimized policies are called devices. They let $\eta(R)$ and $\eta(d)$ be probability distributions otherwise called priors over the space of reward functions and the space of devices respectively. These priors can simply be considered as the agent tendencies to learn this reward function or follow these set of steps. Then they let $p_{agt}(\tau \mid R)$ and $p_{dev}(\tau \mid d)$ be the likelihood functions for a trajectory based on a given reward function or a given device. Using this they define 2 distributions over possible trajectories
 
 $$
 \begin{align}
-p_{agt}(\tau) &= \sum_{R \in \mathcal{R}}p_{agt}(\tau | R) \eta(R) \\
-p_{dev}(\tau) &= \sum_{d \in \Pi} p_{dev}(\tau | d) \eta(d)
+p_{agt}(\tau) &= \sum_{R \in \mathcal{R}}p_{agt}(\tau \mid R) \eta(R) \\
+p_{dev}(\tau) &= \sum_{d \in \Pi} p_{dev}(\tau \mid d) \eta(d)
 \end{align}
 $$
 
 In summary, these 2 different possibilities represent the likely reason behind trajectories, so given a trajectory if $p_{agt}$ is high than it is likely that the agent is maximizing some reward function and if $p_{dev}$ is high that it is likely that the agent is not maximizing a reward function and rather reacting to features it detects and is non-goal directed .
 
-For $p_{dev}(\tau | d)$ they just take the distribution from running that policy $d$ in the environment. For $p_{agt}(\tau|R)$ we want an optimal policy, so this could be the maximum entropy distribution or a probability density distribution of a trajectory trained with RL.
+For $p_{dev}(\tau \mid d)$ they just take the distribution from running that policy $d$ in the environment. For $p_{agt}(\tau \mid R)$ we want an optimal policy, so this could be the maximum entropy distribution or a probability density distribution of a trajectory trained with RL.
 
-Using these definitions we can define what exactly is goal misgeneralization. We can say a policy $\pi$ is a case of misgeneralization if the reward is low, but the agent acts in an optimal way where $p_{agt}(\tau) > p_{dev}(\tau)$ holds on average when testing in OOD environment. The paper makes an interesting assumption where they infer $\eta_{agt}(R | \tau) \propto p_{agt}(\tau|R)\eta(R)$ which basically means the model's tendency to follow a reward function given a trajectory is proportional to the probability of that trajectory given a reward function and the models prior to that reward function
+Using these definitions we can define what exactly is goal misgeneralization. We can say a policy $\pi$ is a case of misgeneralization if the reward is low, but the agent acts in an optimal way where $p_{agt}(\tau) > p_{dev}(\tau)$ holds on average when testing in OOD environment. The paper makes an interesting assumption where they infer $\eta_{agt}(R \mid \tau) \propto p_{agt}(\tau \mid R)\eta(R)$ which basically means the model's tendency to follow a reward function given a trajectory is proportional to the probability of that trajectory given a reward function and the models prior to that reward function
 
 ## Causes
 
