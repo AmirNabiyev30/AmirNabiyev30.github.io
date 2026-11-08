@@ -16,7 +16,13 @@ The paper examines a failure mode where the agent pursues a goal other than in t
 
 ## Formal Definition of Goal Misgeneralization
 
-Given a RL agent that wants to maximize reward where the reward $$R: S \times A \times S \rightarrow \mathbb{R}$$ where $R$ takes state, action, and a successor state as input and outputs a real number. If we assume that this agent is deployed OOD, they say goal misgeneralization happens if the agent achieves a low reward because it continues to act capably but optimizes a different objective $R' \neq R$ where $R$' is the behavioral objective and $R$ is the intended objective.
+Given a RL agent that wants to maximize reward where the reward 
+
+$$
+R: S \times A \times S \rightarrow \mathbb{R}
+$$ 
+
+where $R$ takes state, action, and a successor state as input and outputs a real number. If we assume that this agent is deployed OOD, they say goal misgeneralization happens if the agent achieves a low reward because it continues to act capably but optimizes a different objective $R' \neq R$ where $R$' is the behavioral objective and $R$ is the intended objective.
 
 Now the paper distinguishes between different types of policies that will become helpful for analyzing agent behavior later on. Goal-directed policies are called agents while unoptimized policies are called devices. They let $\eta(R)$ and $\eta(d)$ be probability distributions otherwise called priors over the space of reward functions and the space of devices respectively. These priors can simply be considered as the agent tendencies to learn this reward function or follow these set of steps. Then they let $p_{agt}(\tau \mid R)$ and $p_{dev}(\tau \mid d)$ be the likelihood functions for a trajectory based on a given reward function or a given device. Using this they define 2 distributions over possible trajectories
 
