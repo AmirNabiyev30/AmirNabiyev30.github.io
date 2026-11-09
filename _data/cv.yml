@@ -1,188 +1,83 @@
 cv:
   name: Amir Nabiyev
-  label: Computer Scientist
+  label: Computer Science Student | AI Researcher
   email: amirn2203@gmail.com
-  location: NY
+  phone: 347-935-4619
+  location: New York, NY
   image: ""
-  summary: 
-    I am a computer scientist with a strong background in machine learning, data analysis, and software development. I have experience working on various projects that involve building and deploying machine learning models, analyzing large datasets, and developing software applications. I am passionate about using technology to solve real-world problems and am always eager to learn new skills and technologies.
+  summary: >-
+    Computer science student and AI researcher at The City College of New York,
+    with experience in automated theorem proving, AI agents, fraud detection,
+    and computer science instruction.
 
   social_networks:
     - network: GitHub
-      username: amirnabiyev30
+      username: AmirNabiyev30
     - network: LinkedIn
-      username: Amir Nabiyev
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: amirnabiyev
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: The City College of New York (CCNY), CUNY
+        location: New York, NY
+        area: Computer Science
+        studyType: Bachelor of Science
+        end_date: "2027-05"
+        courses: Software Engineering, Data Structures, Algorithms, Numerical Computing
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Air Force Research Laboratory
+        position: Visiting Faculty Fellowship Program
+        location: Rome, NY
+        start_date: "2026-06"
+        end_date: present
         highlights:
-          - Relativity
-          - Description 2.
+          - Designed a hybrid AI theorem-proving architecture integrating large language models and formal verification to improve mathematical proof generation and correctness.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: The City College of New York
+        position: AI Agents Research Assistant
+        location: New York, NY
+        start_date: "2026-03"
+        end_date: present
         highlights:
-          - Description 1.
-          - Description 2.
+          - Collaborating with Dr. Saptarashmi Bandyopadhyay to explore research directions with AI agents.
+          - Designing and prototyping AI agent workflows for finance portfolio optimization.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: The City College of New York
+        position: Computer Science Tutor
+        location: New York, NY
+        start_date: "2024-01"
+        end_date: present
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - Delivered personalized instruction in computer science fundamentals, including C++ and Python.
+          - Led workshops on creating web-based projects and solving data structures and algorithms problems.
+          - Assisted students in developing debugging strategies and reasoning skills to improve code quality.
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: Automated Theorem Proving System
+        summary: Python, LangGraph, LangChain, Lean 4
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Rebuilt the Goedel-Architect framework for automated theorem proving, using LLM agents to generate structured proof blueprints and iteratively refine proof strategies.
+          - Integrated Lean formal verification into the proof pipeline to validate generated mathematical statements and proofs.
+          - Extended the architecture with a new proof-search skill and evaluated its ability to improve automated reasoning on research-level mathematical problems.
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Elder Fraud Protection
+        summary: React, Python, JavaScript, Flask, OpenAI
+        highlights:
+          - Developed an AI-powered fraud detection platform that analyzes messages and emails for scam indicators and generates risk assessments with explanations.
+          - Built a Chrome extension that extracts email content from Gmail and Outlook and integrates with a backend analysis pipeline for automated screening.
+          - Implemented authenticated user workflows and backend infrastructure with MongoDB and Clerk, with deployment support for Vercel and Render.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: nanoGPT
+        summary: Python, PyTorch
+        highlights:
+          - Built a transformer-based language model from the ground up, implementing key ideas for text generation.
+          - Improved model performance through experimentation with training strategies to enhance output quality.
+
+    Skills:
+      - name: Languages
+        keywords: Python, JavaScript, TypeScript, C++, SQL
+      - name: Frameworks
+        keywords: React, PyTorch, TensorFlow, FastAPI, Tailwind CSS, Next.js, LangChain, LangGraph, Ollama
+      - name: Developer Tools
+        keywords: Git, GitHub Actions, MLflow, SQLite, Docker, AWS, PostgreSQL, MongoDB
