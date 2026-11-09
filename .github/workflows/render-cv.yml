@@ -53,6 +53,10 @@ jobs:
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -A
+          git add assets/rendercv/rendercv_output
+          if git diff --cached --quiet; then
+            echo "No RenderCV output changes to commit."
+            exit 0
+          fi
           git commit -m "chore: render the latest CV"
           git push

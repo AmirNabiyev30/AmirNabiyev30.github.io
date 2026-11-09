@@ -1,14 +1,9 @@
 cv:
   name: Amir Nabiyev
-  label: Computer Science Student | AI Researcher
+  headline: Computer Science Student | AI Researcher
   email: amirn2203@gmail.com
-  phone: 347-935-4619
+  phone: "+13479354619"
   location: New York, NY
-  image: ""
-  summary: >-
-    Computer science student and AI researcher at The City College of New York,
-    with experience in automated theorem proving, AI agents, fraud detection,
-    and computer science instruction.
 
   social_networks:
     - network: GitHub
@@ -17,11 +12,17 @@ cv:
       username: amirnabiyev
 
   sections:
+    Summary:
+      - >-
+        Computer science student and AI researcher at The City College of New York,
+        with experience in automated theorem proving, AI agents, fraud detection,
+        and computer science instruction.
+
     Education:
       - institution: The City College of New York (CCNY), CUNY
         location: New York, NY
         area: Computer Science
-        studyType: Bachelor of Science
+        degree: Bachelor of Science
         end_date: "2027-05"
         courses: Software Engineering, Data Structures, Algorithms, Numerical Computing
 
@@ -75,9 +76,9 @@ cv:
           - Improved model performance through experimentation with training strategies to enhance output quality.
 
     Skills:
-      - name: Languages
-        keywords: Python, JavaScript, TypeScript, C++, SQL
-      - name: Frameworks
-        keywords: React, PyTorch, TensorFlow, FastAPI, Tailwind CSS, Next.js, LangChain, LangGraph, Ollama
-      - name: Developer Tools
-        keywords: Git, GitHub Actions, MLflow, SQLite, Docker, AWS, PostgreSQL, MongoDB
+      - label: Languages
+        details: Python, JavaScript, TypeScript, C++, SQL
+      - label: Frameworks
+        details: React, PyTorch, TensorFlow, FastAPI, Tailwind CSS, Next.js, LangChain, LangGraph, Ollama
+      - label: Developer Tools
+        details: Git, GitHub Actions, MLflow, SQLite, Docker, AWS, PostgreSQL, MongoDB
