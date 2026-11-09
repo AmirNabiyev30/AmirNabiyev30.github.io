@@ -46,3 +46,7 @@ Some weak but fundamental prerequisites of goal misgeneralization as stated in t
 - The training environment must be diverse enough to learn robust capabilities
 - There must exist a proxy $R' : S \times A \times R \rightarrow \mathbb{R}$ that correlates with the intended objective on the training distribution but fails in OOD test environment
   Even though they are relatively weak, they are necessary for it to occur, since these misgeneralization are so weak we can say that goal misgeneralization mostly depends on the models inductive biases and the training algorithm. These learned proxies should be easier than the intended objective and can occur in various such as locational, observational, and instrumentally.
+
+## Summary
+
+The paper formalized a new type of failure mode regarding agents and demonstrated this failure mode in various different experiments. This type of failure is where the model optimizes its policy for a proxy reward which results in a high reward in a training environment but fails when tested in environment's that are out-of-distribution. Being able to maintain capabilities but optimizing for the wrong reward is a scary situation in certain environments. For example in the show Silicon Valley, the code assistant AI is tasked with removing all bugs from the codebase and instead of fixing the code it deleted the entire code base to remove all bugs
