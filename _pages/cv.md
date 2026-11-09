@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/Amir_Nabiyev_CS_ResumeV20.pdf # you can also use external links here
+cv_pdf: /assets/pdf/Amir_Nabiyev_CS_ResumeV20 copy.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
 description: 
 toc:
