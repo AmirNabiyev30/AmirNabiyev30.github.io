@@ -44,7 +44,7 @@ Q = torch.matmul(x,W_q)
 K = torch.matmul(x,W_k)
 ```
 
-These two matrices are two different representations of the same x vector and remember the questions that they tend to represent. We now want to examine how each token correlates with each other token. We can do this by matrix multiplying them together getting raw scores
+These two matrices are two different representations of the same x vector but are projected to be in different spaces. The model can deem where these projections lie. We now want to examine how each token correlates with each other token. We can do this by matrix multiplying them together getting raw scores
 
 $$
 R = QK^{\mathsf{T}}
@@ -64,7 +64,7 @@ scaled_scalar_cov = torch.trace(scaled_sigma) / 6
 # 0.9693
 ```
 
-This means that if averaged at 0, the highest we could see in $R$ is approximately 124 and the lowest value we can see is -124. In scaled $R$, the highest value we could see is approximately 1 and lowest is -1. This will help in terms of the next step.
+This means that if averaged at 0, the highest we could see in $R$ is approximately 11 and the lowest value we can see is -11. In scaled $R$, the highest value we could see is approximately 1 and lowest is -1. This will help in terms of the next step.
 
 For the next step, we need to consider our goal: adding a bounded update to the original embeddings. We first use another matrix, commonly called the value matrix, to project the original embeddings into a new space. What traditional attention uses is a convex combination which is just a special type of linear combination where all the coefficients sum to 1. One useful property of this approach is that it bounds the contextual change to the space of the value matrix $V$. The way that regular self attention does it is by performing a softmax over the attention scores.
 
