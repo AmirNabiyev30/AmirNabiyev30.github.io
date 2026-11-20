@@ -1,0 +1,1 @@
+{"rule":"PRP_VB","sentence":"^\\QWe take our attention matrix which states how much attention should be placed on a token and our \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q which states how valuable those tokens are and we matrix multiply that to get what we call an output matrix.\\E$"}
